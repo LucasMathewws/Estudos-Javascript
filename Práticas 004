@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font: normal 20pt Arial;
+
+    }
+</style>
+
+<body>
+
+
+
+
+
+
+    <script>
+        var nome = window.prompt('Qual eh o seu nome?')
+        var n1 = Number(window.prompt('Digite um numero'))
+        var n2 = Number(window.prompt('Digite outro numero'))
+        var divisao = n1 / n2
+        var salario = Number(window.prompt('Quanto voce ganha por mes, rs'))
+        document.write(`Ola <strong>${nome}</strong>, Seu nome possui ${nome.length} letras<br\>`)
+        document.write(`O seu nome em maisculo eh da seguinte forma: ${nome.toUpperCase()}<br\>`)
+        document.write(`O seu nome em minuculo eh da seguinte forma: ${nome.toLowerCase()}<br\>`)
+        document.write(`O valor da divisao entre o primeiro e o segundo numero digitado eh de: ${divisao.toFixed(2)}<BR\>`)
+        if (salario > 10000) {
+            document.write(`MANO COMO ASSIM VOCE GANHA ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
+        }
+        else {
+            document.write(`TA INDO BEM MAS BORA ESTUDAR PRA AUMENTAR ESSE SALARIO DE: ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+        }
+
+    </script>
+</body>
+
+</html>
