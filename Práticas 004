@@ -35,7 +35,7 @@
             document.write(`MANO COMO ASSIM VOCE GANHA ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
         }
         else {
-            document.write(`TA INDO BEM MAS BORA ESTUDAR PRA AUMENTAR ESSE SALARIO DE: ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }))
+            document.write(`TA INDO BEM MAS BORA ESTUDAR PRA AUMENTAR ESSE SALARIO DE: ${salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}`)
         }
 
     </script>
