@@ -16,6 +16,12 @@
 
         }
 
+        input {
+            width: 100%;
+        }
+
+
+
 
         .seila {
             display: block;
@@ -159,13 +165,14 @@
             <label>CPF</label>
             <input type="text" placeholder="Ex: 123.456.789-00" class="cpf" id="cpff">
             <div style="display: flex; align-items: center;">
-                <div>
+                <div style="width: 50%;">
                     <label style="display: block;">Nascimento</label>
-                    <input type="date" class="nascimento" id="nascido">
+                    <input type="date" class="nascimento" id="nascido" style="width: 100%;">
                 </div>
-                <div style="align-items: center;">
+                <div style="width: 5%;"></div>
+                <div style="align-items: center; width: 50%;">
                     <label>Sexo</label>
-                    <select class="sexo">
+                    <select class="sexo" style="width: 100%;">
                         <option>Feminino</option>
                         <option>Masculino</option>
                         <option>Prefiro não responder</option>
