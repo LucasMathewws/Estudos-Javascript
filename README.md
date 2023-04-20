@@ -141,8 +141,19 @@
 
         <fieldset>
 
-            <h3 class="cadastro">Cadastra-se</h3>
-            <p><strong>Informações pessoais</strong></p>
+            <!-- <h3 class="cadastro">Cadastra-se</h3>
+            <p><strong>Informações pessoais</strong></p> -->
+            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Informações pessoais</p>
+                </div>
+            </div>
             <label>Nome</label>
             <input type="text" placeholder="Ex: Bernardo Silva" class="nome" id="name">
             <label>CPF</label>
@@ -169,15 +180,38 @@
         </fieldset>
 
         <fieldset>
-            <h3>Endereco</h3>
-            <label>Estado</label>
-            <input type="text" name="estado" class="esta_do" placeholder="Ex: RN">
-            <label>Cidade</label>
-            <input type="text" name="cidade" class="cida_de" placeholder="Ex: Mossoro">
-            <label>Bairro</label>
-            <input type="text" name="bairro" class="bair_ro" placeholder="Ex: Nova Betania">
-            <label>Rua</label>
-            <input type="text" name="rua" class="r_ua" placeholder="Ex: R. Martins">
+            <!-- <h3>Endereco</h3> -->
+            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Endereço</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <label style="display: block;">Estado</label>
+                    <input type="text" name="estado" class="esta_do" placeholder="Ex: RN">
+                </div>
+                <div>
+                    <label>Cidade</label>
+                    <input type="text" name="cidade" class="cida_de" placeholder="Ex: Mossoro">
+                </div>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <label>Bairro</label>
+                    <input type="text" name="bairro" class="bair_ro" placeholder="Ex: Nova Betania">
+                </div>
+                <div>
+                    <label>Rua</label>
+                    <input type="text" name="rua" class="r_ua" placeholder="Ex: R. Martins">
+                </div>
+            </div>
             <label>CEP</label>
             <input type="text" name="cep" class="c_ep" placeholder="Ex: 123.456-789">
             <label>complemento</label>
@@ -188,15 +222,32 @@
         </fieldset>
 
         <fieldset>
-            <h3>Email e senha</h3>
+            <!-- <h3>Email e senha</h3> -->
+            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Email e senha</p>
+                </div>
+            </div>
             <label>E-mail</label>
             <input type="email" name="email" class="enderecodeemail" placeholder="Ex: bernardo@outlook.com">
             <label>Confirmar e-mail</label>
             <input type="email" name="confirmaremail" class="confirmar_email" placeholder="Ex:bernardo@outlook.com">
-            <label>senha</label>
-            <input type="password" name="senha" class="password" placeholder="*******">
-            <label>Confirmar senha</label>
-            <input type="password" name="confirmarsenha" class="confirmar_senha" placeholder="*******">
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <label>Senha</label>
+                    <input type="password" name="senha" class="password" placeholder="*******">
+                </div>
+                <div>
+                    <label>Confirmar senha</label>
+                    <input type="password" name="confirmarsenha" class="confirmar_senha" placeholder="*******">
+                </div>
+            </div>
             <input type="submit" nome="anterior" class="anteri_or" value="anterior">
             <input type="submit" name="enviar" class="confirm_ar" value="Confirmar">
         </fieldset>
