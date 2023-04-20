@@ -21,8 +21,6 @@
         }
 
 
-
-
         .seila {
             display: block;
             margin-bottom: 1.5%;
@@ -149,7 +147,7 @@
 
             <!-- <h3 class="cadastro">Cadastra-se</h3>
             <p><strong>Informações pessoais</strong></p> -->
-            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
                 <div>
 
                     <p
@@ -160,6 +158,8 @@
                         Informações pessoais</p>
                 </div>
             </div>
+
+
             <label>Nome</label>
             <input type="text" placeholder="Ex: Bernardo Silva" class="nome" id="name">
             <label>CPF</label>
@@ -182,13 +182,17 @@
             </div>
             <label>Telefone</label>
             <input type="tel" class="telefone" placeholder="Ex: (12) 3456-7890" id="celular">
-            <input type="submit" name="enviar" class="envi_ar" value="Proximo">
+            <br>
+            <div style="text-align: center;">
+                <input type="submit" name="enviar" class="envi_ar" value="Proximo"
+                    style="width: 50%; border-color:#048BA8; background-color: #FFFFFF;">
+            </div>
 
         </fieldset>
 
         <fieldset>
             <!-- <h3>Endereco</h3> -->
-            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
                 <div>
 
                     <p
@@ -200,37 +204,49 @@
                 </div>
             </div>
             <div style="display: flex; align-items: center;">
-                <div>
+                <div style="width: 50%;">
                     <label style="display: block;">Estado</label>
                     <input type="text" name="estado" class="esta_do" placeholder="Ex: RN">
                 </div>
-                <div>
+                <div style="width: 5%;"></div>
+                <div style="width: 50%;">
                     <label>Cidade</label>
                     <input type="text" name="cidade" class="cida_de" placeholder="Ex: Mossoro">
                 </div>
             </div>
             <div style="display: flex; align-items: center;">
-                <div>
+                <div style="width: 50%;">
                     <label>Bairro</label>
                     <input type="text" name="bairro" class="bair_ro" placeholder="Ex: Nova Betania">
                 </div>
-                <div>
+                <div style="width: 5%;"></div>
+                <div style="width: 50%;">
                     <label>Rua</label>
                     <input type="text" name="rua" class="r_ua" placeholder="Ex: R. Martins">
                 </div>
             </div>
             <label>CEP</label>
             <input type="text" name="cep" class="c_ep" placeholder="Ex: 123.456-789">
-            <label>complemento</label>
+            <label>Complemento</label>
             <input type="text" name="complemento_endereco" class="complemen_to" placeholder="Ex: Proximo a prefeitura">
-            <input type="submit" nome="anterior" class="anteri_or" value="anterior">
-            <input type="submit" name="enviar" class="envi_ar" value="Proximo">
+            <br>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 50%;">
+                    <input type="submit" nome="anterior" class="anteri_or" value="anterior"
+                        style="border-color:#048BA8; background-color: #FFFFFF;">
+                </div>
+                <div style="width: 5%;"></div>
+                <div style="width: 50%;">
+                    <input type="submit" name="enviar" class="envi_ar" value="Proximo"
+                        style="border-color:#048BA8; background-color: #FFFFFF;">
+                </div>
+            </div>
 
         </fieldset>
 
         <fieldset>
             <!-- <h3>Email e senha</h3> -->
-            <div style="; width: 100%; justify-content: center; align-items: center; display: flex;">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
                 <div>
 
                     <p
@@ -246,17 +262,28 @@
             <label>Confirmar e-mail</label>
             <input type="email" name="confirmaremail" class="confirmar_email" placeholder="Ex:bernardo@outlook.com">
             <div style="display: flex; align-items: center;">
-                <div>
+                <div style="width: 50%;">
                     <label>Senha</label>
                     <input type="password" name="senha" class="password" placeholder="*******">
                 </div>
-                <div>
+                <div style="width: 5%;"></div>
+                <div style="width: 50%;">
                     <label>Confirmar senha</label>
                     <input type="password" name="confirmarsenha" class="confirmar_senha" placeholder="*******">
                 </div>
             </div>
-            <input type="submit" nome="anterior" class="anteri_or" value="anterior">
-            <input type="submit" name="enviar" class="confirm_ar" value="Confirmar">
+            <br>
+            <div style="display: flex; align-items: center;">
+                <div style="width: 50%;">
+                    <input type="submit" nome="anterior" class="anteri_or" value="anterior"
+                        style="border-color:#048BA8; background-color: #FFFFFF;">
+                </div>
+                <div style="width: 5%;"></div>
+                <div style="width: 50%;">
+                    <input type="submit" name="enviar" class="confirm_ar" value="Confirmar"
+                        style="border-color:#048BA8; background-color: #FFFFFF;">
+                </div>
+            </div>
         </fieldset>
 
     </form>
