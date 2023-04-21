@@ -46,168 +46,163 @@
 
     <form id="formulario">
 
-        <ul id="progresso">
-            <li>Informações pessoais</li>
-            <li>Localização</li>
-            <li>Email e senha</li>
+
         </ul>
 
-        <fieldset class="in_fo">
 
-            <!-- <h3 class="cadastro">Cadastra-se</h3>
-            <p><strong>Informações pessoais</strong></p> -->
-            <div id="etapa-um" style="display: block;">
-                <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
-                    <div>
 
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
-                            Cadastro</p>
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
-                            Informações pessoais</p>
+
+        <div id="etapa-um" style="display: block;">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Informações pessoais</p>
+                </div>
+            </div>
+
+            <div class="etapa_one">
+                <label>Nome</label>
+                <input type="text" placeholder="Ex: Bernardo Silva" class="nome" id="name" name="nome">
+                <label>CPF</label>
+                <input type="text" placeholder="Ex: 123.456.789-00" class="cpf" id="cpff" name="cpf">
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <label style="display: block;">Nascimento</label>
+                        <input type="date" class="nascimento" id="nascido" style="width: 100%;" name="datadenascimento">
+                    </div>
+                    <div style="width: 5%;"></div>
+                    <div style="align-items: center; width: 50%;">
+                        <label>Sexo</label>
+                        <select class="sexo" style="width: 100%;" name="sexo">
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Prefiro não responder</option>
+                            <option>Outros</option>
+                        </select>
                     </div>
                 </div>
+                <label>Telefone</label>
+                <input type="tel" class="telefone" placeholder="Ex: (12) 3456-7890" id="celular"
+                    name="numerodetelefone">
+                <br>
+                <div style="text-align: center;">
+                    <input type="button" name="enviar" class="envi_ar" value="Proximo"
+                        style="width: 50%; border-color:#048BA8; background-color: #FFFFFF;" id="enviar_um"
+                        onclick="next1()">
+                </div>
+            </div>
+        </div>
 
-                <div class="etapa_one">
-                    <label>Nome</label>
-                    <input type="text" placeholder="Ex: Bernardo Silva" class="nome" id="name">
-                    <label>CPF</label>
-                    <input type="text" placeholder="Ex: 123.456.789-00" class="cpf" id="cpff">
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <label style="display: block;">Nascimento</label>
-                            <input type="date" class="nascimento" id="nascido" style="width: 100%;">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="align-items: center; width: 50%;">
-                            <label>Sexo</label>
-                            <select class="sexo" style="width: 100%;">
-                                <option>Feminino</option>
-                                <option>Masculino</option>
-                                <option>Prefiro não responder</option>
-                                <option>Outros</option>
-                            </select>
-                        </div>
+
+
+
+        <div id="etapa-dois">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Endereço</p>
+                </div>
+            </div>
+            <div class="etapa_two">
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <label style="display: block;">Estado</label>
+                        <input type="text" name="estado" class="esta_do" placeholder="Ex: RN">
                     </div>
-                    <label>Telefone</label>
-                    <input type="tel" class="telefone" placeholder="Ex: (12) 3456-7890" id="celular">
-                    <br>
-                    <div style="text-align: center;">
+                    <div style="width: 5%;"></div>
+                    <div style="width: 50%;">
+                        <label>Cidade</label>
+                        <input type="text" name="cidade" class="cida_de" placeholder="Ex: Mossoro">
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro" class="bair_ro" placeholder="Ex: Nova Betania">
+                    </div>
+                    <div style="width: 5%;"></div>
+                    <div style="width: 50%;">
+                        <label>Rua</label>
+                        <input type="text" name="rua" class="r_ua" placeholder="Ex: R. Martins">
+                    </div>
+                </div>
+                <label>CEP</label>
+                <input type="text" name="cep" class="c_ep" placeholder="Ex: 123.456-789">
+                <label>Complemento</label>
+                <input type="text" name="complemento_endereco" class="complemen_to"
+                    placeholder="Ex: Proximo a prefeitura">
+                <br>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <input type="button" nome="anterior" class="anteri_or" value="Anterior"
+                            style="border-color:#048BA8; background-color: #FFFFFF;" onclick="anterior2()">
+                    </div>
+                    <div style="width: 5%;"></div>
+                    <div style="width: 50%;">
                         <input type="button" name="enviar" class="envi_ar" value="Proximo"
-                            style="width: 50%; border-color:#048BA8; background-color: #FFFFFF;" id="enviar_um"
-                            onclick="next1()">
+                            style="border-color:#048BA8; background-color: #FFFFFF;" id="proximo_dois"
+                            onclick="next2()">
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="endere_co">
-            <!-- <h3>Endereco</h3> -->
-            <div id="etapa-dois">
-                <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
-                    <div>
 
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
-                            Cadastro</p>
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
-                            Endereço</p>
+
+        <div id="etapa-tres">
+            <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
+                <div>
+
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
+                        Cadastro</p>
+                    <p
+                        style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
+                        Email e senha</p>
+                </div>
+            </div>
+            <div class="etapa_three">
+                <label>E-mail</label>
+                <input type="email" name="email" class="enderecodeemail" placeholder="Ex: bernardo@outlook.com">
+                <label>Confirmar e-mail</label>
+                <input type="email" name="confirmaremail" class="confirmar_email" placeholder="Ex:bernardo@outlook.com">
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <label>Senha</label>
+                        <input type="password" name="senha" class="password" placeholder="*******">
+                    </div>
+                    <div style="width: 5%;"></div>
+                    <div style="width: 50%;">
+                        <label>Confirmar senha</label>
+                        <input type="password" name="confirmarsenha" class="confirmar_senha" placeholder="*******">
                     </div>
                 </div>
-                <div class="etapa_two">
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <label style="display: block;">Estado</label>
-                            <input type="text" name="estado" class="esta_do" placeholder="Ex: RN">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="width: 50%;">
-                            <label>Cidade</label>
-                            <input type="text" name="cidade" class="cida_de" placeholder="Ex: Mossoro">
-                        </div>
+                <br>
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50%;">
+                        <input type="button" nome="anterior" class="anteri_or" value="anterior"
+                            style="border-color:#048BA8; background-color: #FFFFFF;" id="anterior_dois"
+                            onclick="anterior3()">
                     </div>
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <label>Bairro</label>
-                            <input type="text" name="bairro" class="bair_ro" placeholder="Ex: Nova Betania">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="width: 50%;">
-                            <label>Rua</label>
-                            <input type="text" name="rua" class="r_ua" placeholder="Ex: R. Martins">
-                        </div>
-                    </div>
-                    <label>CEP</label>
-                    <input type="text" name="cep" class="c_ep" placeholder="Ex: 123.456-789">
-                    <label>Complemento</label>
-                    <input type="text" name="complemento_endereco" class="complemen_to"
-                        placeholder="Ex: Proximo a prefeitura">
-                    <br>
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <input type="button" nome="anterior" class="anteri_or" value="Anterior"
-                                style="border-color:#048BA8; background-color: #FFFFFF;" onclick="anterior2()">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="width: 50%;">
-                            <input type="button" name="enviar" class="envi_ar" value="Proximo"
-                                style="border-color:#048BA8; background-color: #FFFFFF;" id="proximo_dois"
-                                onclick="next2()">
-                        </div>
+                    <div style="width: 5%;"></div>
+                    <div style="width: 50%;">
+                        <input type="submit" name="enviar" class="confirm_ar" value="Confirmar"
+                            style="border-color:#048BA8; background-color: #FFFFFF;">
                     </div>
                 </div>
             </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="email_senha">
-            <!-- <h3>Email e senha</h3> -->
-            <div id="etapa-tres">
-                <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
-                    <div>
-
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; margin-bottom: 5%; color:#048BA8;font-size: 2.5rem; font-weight: 400;">
-                            Cadastro</p>
-                        <p
-                            style="margin: 0%; justify-content: center; align-items: center; display: flex; color: #01C3BC; font-weight: 200; font-size: 1.5rem;">
-                            Email e senha</p>
-                    </div>
-                </div>
-                <div class="etapa_three">
-                    <label>E-mail</label>
-                    <input type="email" name="email" class="enderecodeemail" placeholder="Ex: bernardo@outlook.com">
-                    <label>Confirmar e-mail</label>
-                    <input type="email" name="confirmaremail" class="confirmar_email"
-                        placeholder="Ex:bernardo@outlook.com">
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <label>Senha</label>
-                            <input type="password" name="senha" class="password" placeholder="*******">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="width: 50%;">
-                            <label>Confirmar senha</label>
-                            <input type="password" name="confirmarsenha" class="confirmar_senha" placeholder="*******">
-                        </div>
-                    </div>
-                    <br>
-                    <div style="display: flex; align-items: center;">
-                        <div style="width: 50%;">
-                            <input type="button" nome="anterior" class="anteri_or" value="anterior"
-                                style="border-color:#048BA8; background-color: #FFFFFF;" id="anterior_dois"
-                                onclick="anterior3()">
-                        </div>
-                        <div style="width: 5%;"></div>
-                        <div style="width: 50%;">
-                            <input type="submit" name="enviar" class="confirm_ar" value="Confirmar"
-                                style="border-color:#048BA8; background-color: #FFFFFF;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </fieldset>
 
     </form>
 
